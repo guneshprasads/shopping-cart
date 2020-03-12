@@ -5,23 +5,25 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : 2.6.3
+
+* Rails version : 6.0.2.1
 
 * System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+* Database creation : sql database
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
+* Steps you want to cover
+    1.Bundle install
+    2.Bundle update
+    3.rails db:create
+    4.rails db:migration
+    5.rails s(Local server(localhost:3000))
+    6.rails c(Rails console)
 
 * Home page which will show all the products
 
