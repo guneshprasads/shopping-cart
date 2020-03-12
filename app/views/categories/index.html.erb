@@ -1,0 +1,15 @@
+<div style ="background-color: #ADD8E6;height: 700px;margin-top:0px;text-decoration-color: white; " >
+
+<h2>Categories (<%= @categories.length %>)</h2>
+
+<ol class="products-list">
+  <% @categories.each do |category| %>
+    <li>
+      <%= link_to category_products_path(category) do %>
+        <%= category.title %>
+        (<%= category.products_count %> products)
+      <% end %>
+    </li>
+  <% end %>
+</ol>
+</div>

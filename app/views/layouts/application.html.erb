@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopper</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="home">
+      <p class="home-button">
+        <%= link_to "Home", root_path %> 
+      </p>
+      <%= render 'layouts/search' %>
+      <div class="cart">
+         <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
+      </div>      
+    </div> 
+
+    <hr />
+
+    <%= yield %>
+  </body>
+
+</html>
