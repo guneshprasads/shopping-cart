@@ -23,10 +23,13 @@ Things you may want to cover:
 
 * ...
 
-Home page which will show all the products
-Search which was based on both Product name and Category name
-you can add or remove the product to the cart
-Filter option which was based on price(minimum and maximum)
+* Home page which will show all the products
+
+* Search which was based on both Product name and Category name
+
+* you can add or remove the product to the cart
+
+* Filter option which was based on price(minimum and maximum)
 
 
 # shopping-cart
